@@ -34,8 +34,16 @@
                 </ul>
                 <hr>
                 <div>
-                    <a href="{{ route('login') }}" class="btn btn-success btn-sm text-light"> Login </a>
-                    <a href="{{ route('register') }}" class="btn btn-dark btn-sm text-light"> Register </a>
+                    @auth
+                        <form action="{{ route('logout') }}" method="POST">
+                            @csrf
+                            <button type="submit" class="btn btn-danger btn-sm">Logout</button>
+                        </form>
+                    @endauth
+                    @guest
+                        <a href="{{ route('login') }}" class="btn btn-success btn-sm text-light"> Login </a>
+                        <a href="{{ route('register') }}" class="btn btn-dark btn-sm text-light"> Register </a>
+                    @endguest
                 </div>
             </div>
         </div>

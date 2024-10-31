@@ -10,15 +10,21 @@
                     </div>
 
                     <div class="card-body">
-                        <form method="POST" action="#">
-
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
+                            @if ($errors->has('login'))
+                                <span class="text-danger">
+                                    <strong>{{ $errors->first('login') }}</strong>
+                                </span>
+                            @endif
                             <div class="mb-3 d-none">
                                 <label for="username" class="form-label">Username</label>
                                 <input id="username" type="text" class="form-control" name="username">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email Address</label>
-                                <input id="email" type="email" class="form-control" name="email" required>
+                                <input id="email" type="email" class="form-control" name="email"
+                                    value="{{ old('email') }}" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
