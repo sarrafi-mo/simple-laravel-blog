@@ -1,0 +1,45 @@
+body {
+    background-color: #f8f9fa; /* رنگ پس‌زمینه روشن */
+}
+.login-container {
+    margin-top: 100px;
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    border-radius: 15px 15px 0 0;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Takes all available space */
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.captcha-container {
+    text-align: left;
+}
+
+.captcha-message {
+    color: rgb(226, 63, 63);
+    font-weight: bold;
+    margin-top: 10px;
+}
