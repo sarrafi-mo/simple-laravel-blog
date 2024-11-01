@@ -1,5 +1,5 @@
 body {
-    background-color: #f8f9fa; /* رنگ پس‌زمینه روشن */
+    background-color: #f8f9fa;
 }
 .login-container {
     margin-top: 100px;
@@ -42,4 +42,32 @@ a {
     color: rgb(226, 63, 63);
     font-weight: bold;
     margin-top: 10px;
+}
+
+.comments-section {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.comment {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.comment:last-child {
+    border-bottom: none;
+}
+.comment-form {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.cursor-pointer{
+    cursor: pointer;
 }
